@@ -1,0 +1,230 @@
+<!--
+  File: /~ralves1/public_html/index.html Assignment: Creating Your First Web Page
+  Rebecca S. Silva Alves, UMass Lowell Computer Science, ralves1@cs.uml.edu Copyright (c) 2020 by Rebecca S. Silva Alves. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+  Updated by Rebecca Alves on September 22, 2020 at 2:45 PM
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Reguired tags for bootsrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!--Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <title>
+      Rebecca Alves
+    </title>
+
+ </head>
+
+ <body>
+   <!-- goes back to the top of the page -->
+   <a class ="home" name="HOMELINK"></a>
+   <!--Main container-->
+   <section>
+     <!-- Main header with custom font-->
+     <div class = "container">
+       <div class="jumbotron jumbotron-fluid align-self-center">
+           <p> Hi, I'm </p>
+           <h1>Rebecca Alves </h1>
+       </div>
+       <!--Photo of me -->
+       <div clas="row">
+         <div class = "col-sm-12">
+           <img src="me.jpeg" class="w-50 mb-5 rounded-circle mx-auto d-block" alt="Rebecca Alves">
+         </div>
+       </div>
+
+     <!--FLOATING NAV BAR THAT LINKS TO OTHER AREAS OF THE PAGE-->
+       <nav class="navbar navbar-expand-sm justify-content-center mt-0">
+         <ul class="navbar-nav">
+           <li class="nav-item">
+             <a class="nav-link text-center" href="#HOMELINK">HOME</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-center" href="#ABOUTLINK">ABOUT </a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-center" href="#HOMEWORKLINK">HOMEWORK</a>
+           </li>
+           <li class="nav-item text-center">
+             <a class="nav-link" href="#RESUMELINK">RESUME</a>
+           </li>
+        </nav>
+      </div>
+    </section>
+    <!--ABOUT ME SECTION CONTAINS A BRIEF DESCRIPTION OF ME-->
+    <!--Section header to have each section occupy an entire page !-->
+    <section>
+    <div class = "container">
+      <div class ="row">
+        <div class="about col-12 mt-3 border-bottom">
+          <a class="text-center" id = "ABOUTLINK"> <h2 class="sectionHeader">About Me</h2> </a>
+        </div>
+      </div>
+      <!--ABOUT ME SECTION-->
+      <!--Centering content -->
+      <div class="row">
+        <div class="col-sm-3 p-1">
+        </div>
+        <div class="col-sm-6 pt-3">
+          <h4 class = "description text-center"> Basic information </h4>
+        </div>
+        <div class="col-sm-3 p-1">
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-sm-3 p-1">
+        </div>
+        <div class="col-sm-6 p-1">
+          <p class="text-left p-0"><strong>Name:</strong> Rebecca Spindola Silva Alves </p>
+          <p class="text-left p-0"><strong>Age:</strong> 24 </p>
+          <p class="text-left p-0"><strong>Location:</strong> Hudson, MA </p>
+        </div>
+        <div class="col-sm-3 p-1">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 p-1">
+        </div>
+        <div class="col-sm-6 p-1">
+          <h4 class = "description text-center"> Introduction </h4>
+        </div>
+        <div class="col-sm-3 p-1">
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-sm-3 p-1">
+        </div>
+        <div class="col-sm-6 p-1">
+          <p class = "text-left description"> You stumbled upon my first webpage! Welcome. I recently made some changes utilizing bootstrap. I was born in a small Brazilian town that you cannot locate on a map. I migrated with my family to america when I was very young. I spent most of my childhood and teenage years in Framingham, MA. I absolutely love framingham, and I am very thankful for my expirience in the diverse enviroment. My favorite passtime activities are concerts, board games, video games, an playing guitar. I also venture on the occasional hike here and there. My board game collection contains over 40+ games. If you need an unconventional board game recommendation, I am your gal! I lost count of the amount of concerts I attended. The concerts I attend range from metal to alternative rock. You can convince me to see any band or performer live.
+          </p>
+        </div?
+        <div class="col-sm-3 p-1">
+        </div>
+         <!--ABOUT ME SECTION-->
+      </div>
+      <!-- Nav back to the top of the page -->
+      <nav class="navbar navbar-expand-sm justify-content-center mt-0">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-center" href="#HOMELINK">HOME</a>
+          </li>
+        </ul>
+       </nav>
+
+        <!--PHOTO OF ME FOR REFERENCE. I COULD NOT POSITION THE FLOATING NAV TO GO OVER THE PICTURE< I TRIED RELETIVE POSITION, FIXED, Z-MARGIN-->
+    </div>
+    </section>
+
+     <!--RESUME CLASS-->
+     <section>
+     <div class = "container">
+       <div class ="row">
+         <div class="section col-sm-12 mt-3 border-bottom">
+           <!--ID IN ORDER FOR THE FLOATING NAV TO LINK-->
+           <a class="text-center" id= "RESUMELINK"><h2 class="sectionHeader">Resume</h2></a>
+         </div>
+       </div>
+
+       <!--RESUME FORMAT BROKEN DOWN INTO SEPERATE SECTIONS-->
+       <h3 class="border-bottom text-left" > Contact</h3>
+       <p class="text-left p-0"><strong>Email:</strong> rebeccaspindola@hotmail.com</p>
+       <p class="text-left p-0"><strong>Phone Number:</strong> (508)439-1638)</p>
+
+
+       <h3 class="border-bottom text-left"> Technical Skills </h3>
+       <p class="text-left p-0"><strong>Programming Laguages:</strong> HTML, Python, C, C++, CSS </p>
+       <p class="text-left p-0"><strong>Productivity Software:</strong> Microsoft Word, Excel, Power-point, Keynote, Pages, Numbers</p>
+       <p class="text-left p-0"><strong>Operating Systems:</strong> MacOS, Unix, iOS, Windows </p>
+       <p class="text-left p-0"><strong>Technical Certifications:</strong> Apple Certified Mac Technician (ACMT), Apple Certified iOS Technician (ACiT) </p>
+
+       <h3 class="border-bottom text-left">Employment History</h3>
+
+       <h4>Bookstone </h4>
+       <p class="text-left p-0">Sales Associate (10/2012 - 11/2012) </p>
+       <p class="text-left p-0">Lead Associate/2nd Assistant Store Manager (11/2012 - 06/2015) </p>
+       <p class="text-left p-0">Assistant Store Manager (04/2016 - 04/2017) </p>
+
+       <h4>Precision Fitness Equipment </h4>
+       <p class="text-left p-0">Sales Coordinator (04/2015 - 06/2016) </p>
+
+       <h4>Apple </h4>
+       <p class="text-left p-0">Specialist (12/2016 – 04/2017)</p>
+       <p class="text-left p-0">Technical Specialist (04/2017 – 12/2017)</p>
+       <p class="text-left p-0">Technical Expert (12/2017 – 11/2018)</p>
+       <p class="text-left p-0">Genius (11/2018 – Present) </p>
+
+
+       <h3 class="border-bottom text-left">Education </h3>
+       <h4> Massachussets Bay Community College </h4>
+       <p class="text-left p-0"> Graduation Date: 12/2018 </p>
+       <p class="text-left p-0"> Degree: (AA) Liberal Arts </p>
+
+       <h4> University of Massachussets Lowell </h4>
+       <p class="text-left p-0"> Currently Attending </p>
+       <p class="text-left p-0"> Bachelor of Science in Computer Science </p>
+       <p class="text-left p-0"> Concentration: Biocheminformatics </p>
+      </div>
+      <nav class="navbar navbar-expand-sm justify-content-center mt-0">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-center" href="#HOMELINK">HOME</a>
+          </li>
+        </ul>
+       </nav>
+    </section>
+    <!--HOMEWORK CONTAINER-->
+    <section>
+     <div class = "container">
+       <div class = "row">
+         <div class="col-sm-12 mt-3 border-bottom">
+           <!--ONCE I HAVE MORE HOMEWORK ASSIGNMENTS, THIS WILL CONTAIN A LINK TO THE OTHER ASSIGNMENTS-->
+           <a class="text-center" id = "HOMEWORKLINK"> <h2 class="sectionHeader">Homework</h2> </a>
+         </div>
+       </div>
+       <div class = "row">
+         <div class="col-sm pt-2">
+           <!--ONCE I HAVE MORE HOMEWORK ASSIGNMENTS, THIS WILL CONTAIN A LINK TO THE OTHER ASSIGNMENTS-->
+           <a class="button" href="homework2/index.html"> <p class ="text-center border"> HOMEWORK 2 </p></a>
+         </div>
+         <div class="col-sm pt-2">
+           <a class="button" href="homework3/index.html"> <p class ="text-center border"> HOMEWORK 3 </p></a>
+         </div>
+         <div class="col-sm pt-2">
+           <a class="button" href="#HOMELINK"><p class ="text-center border"> HOMEWORK 4 </p></a>
+         </div>
+       </div>
+    </div>
+     <nav class="navbar navbar-expand-sm justify-content-center mt-0">
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a class="nav-link text-center" href="#HOMELINK">HOME</a>
+         </li>
+       </ul>
+      </nav>
+    </section>
+
+
+     <!--COPYRIGHT FOOTER-->
+     <div class = "row">
+       <div class="col-sm pt-2">
+         <footer class="footer text-center">
+           Copyright 2020
+         </footer>
+       </div>
+     </div>
+
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ 		 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ 		 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ 		 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   </div>
+ </body>
+</html>

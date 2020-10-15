@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Resizing about me sections */
+@media screen and (max-width: 600px) {
+  .description {
+    font-size: 15px;
+  }
+}
+
+/* Resizing about me sections */
+@media screen and (min-width: 600px) {
+  .description {
+    font-size: 20px;
+  }
+}
+
+/* Resizing occupy entire page*/
+section {
+  min-height: 100vh;
+}
+
+ /*Set background color to light gray */
+
+.jumbotron {
+  background-color: #fff;
+}
+.jumbotron h1, p{
+  text-align: center;
+}
+
+.jumbotron p{
+  margin-bottom: 0px;
+}
+
+.jumbotron h1, .sectionHeader {
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: gray;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #F6A192; !important;
+}
+
+
+h2 {
+  color: #000;
+}
+
+/*Float the image to the right of the about me description */
+img {
+  transform: rotate(180deg);
+  width:70%;
+  margin-left:15px;
+}
+
+
+/*Styling for footer*/
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #F6A192; !important;
+}
