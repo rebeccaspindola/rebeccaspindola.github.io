@@ -1,0 +1,101 @@
+<!--
+  File: /~ralves1/public_html/index.html Assignment: Creating Your First Web Page
+  Rebecca S. Silva Alves, UMass Lowell Computer Science, ralves1@cs.uml.edu Copyright (c) 2020 by Rebecca S. Silva Alves. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+  Updated by Rebecca Alves on September 22, 2020 at 2:45 PM
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Rebecca Alves
+    </title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+
+ <body>
+   <!--Main container-->
+   <div id = "container">
+   <!--FLOATING NAV BAR THAT LINKS TO OTHER AREAS OF THE PAGE-->
+     <div class="box-1">
+       <a class="button" href="#ABOUTLINK"> About </a>
+     </div>
+
+     <div class="box-2">
+       <a class="button" href="#HOMEWORKLINK"> Homework </a>
+     </div>
+
+     <div class="box-3">
+       <a class="button" href="#RESUMELINK"> Resume </a>
+     </div>
+     <!--ABOUT ME SECTION CONTAINS A BRIEF DESCRIPTION OF ME-->
+     <div class="about">
+       <!--ID IN ORDER FOR THE FLOATING NAV TO LINK-->
+       <a id = "ABOUTLINK"> <h1>About Me</h1> </a>
+       <!--LEFT FLOAT ID-->
+       <div id="leftFloat">
+         <!--PHOTO OF ME FOR REFERENCE. I COULD NOT POSITION THE FLOATING NAV TO GO OVER THE PICTURE< I TRIED RELETIVE POSITION, FIXED, Z-MARGIN-->
+         <img src="me.jpeg" alt="Rebecca Alves">
+         <!--ABOUT ME SECTION-->
+         <h2> Welcome<br> My name is Rebecca Alves <br>You  stumbled upon my first webpage <br> I was born in a small Brazilian town that you cannot locate on a map. I migrated with my family to america when I was very young. I spent most of my childhood and teenage yers in Framingham, MA. I absolutely love framingham, and I am very thankful for my expirience in the diverse enviroment. My favorite passtime activities are concerts, board games, video games, an playing guitar. I also venture on the occasional hike here and there. My board game collection contains over 40+ games. If you need an unconventional board game recommendation, I am your gal! I lost count of the amount of concerts I attended. The concerts I attend range from metal to alternative rock. You can convince me to see any band or performer live.
+         </h2>
+       </div>
+     </div>
+
+     <!--RESUME CLASS-->
+     <div class="resume">
+       <!--ID IN ORDER FOR THE FLOATING NAV TO LINK-->
+       <a id= "RESUMELINK"><h1>Resume</h1></a>
+       <!--RESUME FORMAT BROKEN DOWN INTO SEPERATE SECTIONS-->
+       <h2>Contact</h2>
+       <p><strong>Email:</strong> rebeccaspindola@hotmail.com</p>
+       <p><strong>Phone Number:</strong> (508)439-1638)</p>
+
+       <h2>Technical Skills </h2>
+       <p><strong>Programming Laguages:</strong> HTML, Python, C, C++, CSS </p>
+       <p><strong>Productivity Software:</strong> Microsoft Word, Excel, Power-point, Keynote, Pages, Numbers</p>
+       <p><strong>Operating Systems:</strong> MacOS, Unix, iOS, Windows </p>
+       <p><strong>Technical Certifications:</strong> Apple Certified Mac Technician (ACMT), Apple Certified iOS Technician (ACiT) </p>
+
+       <h2>Employment History</h2>
+
+       <h4>Bookstone </h4>
+       <p>Sales Associate (10/2012 - 11/2012) </p>
+       <p>Lead Associate/2nd Assistant Store Manager (11/2012 - 06/2015) </p>
+       <p>Assistant Store Manager (04/2016 - 04/2017) </p>
+
+       <h4>Precision Fitness Equipment </h4>
+       <p>Sales Coordinator (04/2015 - 06/2016) </p>
+
+       <h4>Apple </h4>
+       <p>Specialist (12/2016 – 04/2017)</p>
+       <p>Technical Specialist (04/2017 – 12/2017)</p>
+       <p>Technical Expert (12/2017 – 11/2018)</p>
+       <p>Genius (11/2018 – Present) </p>
+
+
+       <h2>Education </h2>
+       <h4> Massachussets Bay Community College </h4>
+       <p> Graduation Date: 12/2018 </p>
+       <p> Degree: (AA) Liberal Arts </p>
+
+       <h4> University of Massachussets Lowell </h4>
+       <p> Currently Attending </p>
+       <p> Bachelor of Science in Computer Science </p>
+       <p> Concentration: Biocheminformatics </p>
+
+     </div>
+     <!--HOMEWORK CONTAINER-->
+     <div class="homework">
+       <!--ONCE I HAVE MORE HOMEWORK ASSIGNMENTS, THIS WILL CONTAIN A LINK TO THE OTHER ASSIGNMENTS-->
+       <a id = "HOMEWORKLINK"> <h1>Homework</h1> </a>
+       <a class = "button" href="homework3/index.html">HOMEWORK 1 </a>
+     </div>
+     <!--COPYRIGHT FOOTER-->
+     <footer class ="footer">
+       Copyright 2020
+     </footer>
+   </div>
+ </body>
+</html>

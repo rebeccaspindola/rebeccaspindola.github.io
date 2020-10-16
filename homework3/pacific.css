@@ -1,0 +1,110 @@
+
+/*I created a grid layout inroder to set up the main page*/
+#wrapper {
+	width: 80%;
+	margin: auto;
+	display: grid;
+}
+
+/*header takes up an entire column. Set the immage to occupy the entire container */
+header {
+	grid-column: 1/3;
+	grid-row: 1;
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+/*Background image repeats horizontally. Background color kicks in where the immage ends*/
+body {
+	background-color: #00569f;
+	background-image: url("ptrbackground.jpg");
+	background-repeat: repeat-x;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*set the nav bar to occupy the left most row below the header*/
+nav {
+	grid-row: 2/4;
+	background-color: #90c8e3;
+}
+
+/*formating for the menu options. removed bullitinr*/
+nav ul {
+	margin: 0;
+	padding: 15px;
+	font-size: 1.2em;
+	list-style: none;
+}
+
+/*set the color for the nav menu. made the letters bold. removed underline*/
+nav a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #000032;
+}
+
+/*container occupies the remaining right columns*/
+#content {
+	padding-left: 20px;
+	background-color: #fff;
+}
+
+/*set the bulitin points inside the content container to the marker gif */
+ul {
+	list-style-image: url('marker.gif');
+	list-style-position: inside;
+}
+
+/*change the color of the resort name */
+.resort {
+	color: #3399CC;
+	font-weight: bold;
+}
+
+/* position the immage to the left. set padding to the right between the image and the text  */
+img {
+	float: left;
+	padding-right: 15px;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+h1 {
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+
+/*formating for the footer. set to italic and position the footer inline with the main content container.  */
+footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: small;
+	font-style: italic;
+	background-color: #fff;
+	padding-left: 20px;
+	font-family: Georgia, "Times New Roman", serif;
+}
