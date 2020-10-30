@@ -18,7 +18,7 @@ function onSubmit() {
   var startY = minRow;
 
   var x;
-  //Create Table
+  //Create Table. used https://stackoverflow.com/questions/54523630/multiplication-table-using-appendchild-and-html-table as a source
   var table = document.createElement('table');
   table.classList.add('newTable');
 
@@ -55,7 +55,7 @@ function onSubmit() {
 
     }
 
-    if(i != 0) {
+    if(i != 0) { //after first case
       startY++;
     }
 
