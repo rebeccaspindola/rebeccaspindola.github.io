@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplication Table</title>
+    <link rel= "stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- page content -->
+    <h1> Multiplication Table Generator </h1>
+    <!-- Input Table -->
+    <div class="inputTable">
+    <form>
+      <table>
+        <tr>
+          <th><label for="quantity"> Minimum Column Value: </label></th>
+          <td><input type ="number" id="xFirst" min="-50" max="50"> <br></td>
+        </tr>
+        <tr>
+          <th><label for="quantity"> Maximum Column Value: </label></th>
+          <td><input type ="number" id="xEnd" min="-50" max="50"> <br></td>
+        </tr>
+        <tr>
+          <th><label for="quantity"> Minimum Row Value: </label></th>
+          <td><input type ="number" id="yFirst" min="-50" max="50"> <br></td>
+        </tr>
+        <tr>
+          <th><label for="quantity"> Maximum Row Value: </label></th>
+          <td><input type="number"  id ="yLast" min="-50" max="50"> <br></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value ="Submit" onclick="return onSubmit()"></td>
+        </tr>
+      </table>
+    </form>
+    </div>
+    <!-- Javascript generated Table -->
+    <div id="myTable"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
