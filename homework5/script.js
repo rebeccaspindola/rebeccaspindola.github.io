@@ -1,3 +1,10 @@
+/*
+  Assignment 6
+  Rebecca S. Silva Alves, UMass Lowell Computer Science, ralves1@cs.uml.edu Copyright (c) 2020 by Rebecca S. Silva Alves. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+  Updated by Rebecca Alves on October 30, 2020 at 12:58 PM
+*/
+
 function onSubmit() {
   //assign variables.
   var minCol = Number(document.getElementById('xFirst').value);
