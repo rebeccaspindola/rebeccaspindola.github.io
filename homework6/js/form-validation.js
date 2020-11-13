@@ -4,22 +4,26 @@ $(document).ready(function() {
 
     rules: {
       xFirst: {
-        required: true, //requires input
-        number: true //verifies input is a number
+        required: true, //requires input. Applies to all form input values
+        number: true, //verifies input is a number. Applies to all form input values
+        range: [-100,100] //make sure input is between -100 and 100. Applies to all form input values
       },
       xEnd: {
         required: true,
         number: true,
-        greaterThan: '#xFirst' //verifies that xEnd is greater than xFrist
+        greaterThan: '#xFirst', //verifies that xEnd is greater than xFirst
+        range: [-100,100]
       },
       yFirst: {
         required: true,
         number: true,
+        range: [-100,100]
       },
       yEnd: {
         required: true,
         number: true,
-        greaterThan: '#yFirst'
+        greaterThan: '#yFirst', //verifies that xEnd is greater than yFirst
+        range: [-100,100]
       }
     },
 
@@ -29,21 +33,25 @@ $(document).ready(function() {
         required: "Please enter a value between -100 to 100",
         number: "Error: Input must be a number",
         //lessThan: "Please enter a value less than the Maximum Column Value"
+        range: "Value must be between -100 to 100",
       },
       xEnd: {
         required: "Please enter a value between -100 to 100",
         number: "Error: Input must be a number",
-        greaterThan: "Please enter a value greater than the Minimum Column Value"
+        greaterThan: "Please enter a value greater than the Minimum Column Value",
+        range: "Value must be between -100 to 100",
       },
       yFirst: {
         required: "Please enter a value between -100 to 100",
         number: "Error: Input must be a number",
         //lessThan: "Please enter a value less than the Maximum Row Value"
+        range: "Value must be between -100 to 100"
       },
       yEnd: {
         required: "Please enter a value between -100 to 100",
         number: "Error: Input must be a number",
-        greaterThan: "Please enter a value less than the Minimum Column Value"
+        greaterThan: "Please enter a value less than the Minimum Column Value",
+        range: "Value must be between -100 to 100",
       }
     },
 
