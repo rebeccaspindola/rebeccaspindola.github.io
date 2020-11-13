@@ -33,25 +33,21 @@ $(document).ready(function() {
         required: "Please enter a value between -100 to 100",
         number: "Error: Input must be a number",
         //lessThan: "Please enter a value less than the Maximum Column Value"
-        range: "Value must be between -100 to 100",
       },
       xEnd: {
         required: "Please enter a value between -100 to 100",
         number: "Error: Input must be a number",
         greaterThan: "Please enter a value greater than the Minimum Column Value",
-        range: "Value must be between -100 to 100",
       },
       yFirst: {
         required: "Please enter a value between -100 to 100",
         number: "Error: Input must be a number",
         //lessThan: "Please enter a value less than the Maximum Row Value"
-        range: "Value must be between -100 to 100"
       },
       yEnd: {
         required: "Please enter a value between -100 to 100",
         number: "Error: Input must be a number",
         greaterThan: "Please enter a value less than the Minimum Column Value",
-        range: "Value must be between -100 to 100",
       }
     },
 
