@@ -305,5 +305,4 @@ function slides() {
       slider.slider( "value", this.value);
     });
   });
-
 }
