@@ -10,3 +10,8 @@ HOMEWORK 6:
 -Added JQuery validation
 -Styled page using CSS
 -Formatted page using Bootstrap 
+
+HOMEWORK 7: 
+
+-INITIAL TABLE tab will update dynamically with slider once ALL input is valid
+-I have individial remove icons next to newly created tabs, but no delete all. Could not get the tabs to delete properly 
