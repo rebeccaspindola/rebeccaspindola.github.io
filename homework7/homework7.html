@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS for styling -->
     <link rel="stylesheet" href="css/style.css">
     <!--Custom Font -->
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <!-- jQuery required CSS-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
   </head>
   <body>
     <!-- page content. Top of Page  -->
@@ -46,7 +49,8 @@
               <input type ="number" class="form-control" name ="yEnd" id="yLast" required>
             </div>
           </div>
-            <input type="submit" value ="Submit" onclick="return onSubmit()"></td>
+            <!-- Submit calls onSubmit function to create a table to a new tab -->
+            <input type="submit" value ="Save" id ="submitButton"></td>
         </form>
       </div>
     </div>
@@ -54,7 +58,14 @@
     <div class="container overflow-auto">
       <div class ="row">
         <div class="col-12 align-self-center">
-          <div id="myTable"></div>
+          <div id="tabs">
+            <ul>
+              <li><a href = "#initTab" class ="overflow-auto"> Initial Table</a></li>
+            </ul>
+            <div id="initTab">
+              <div id="initTable"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -71,6 +82,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <script src="js/form-validation.js"></script>
+
+    <!--JQUERY UI -->
+    <script src ="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js "></script>
 
   </body>
 </html>
