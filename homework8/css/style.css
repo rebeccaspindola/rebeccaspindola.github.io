@@ -1,0 +1,68 @@
+/*
+  Assignment: Drag and Drop Scrabble
+  Rebecca S. Silva Alves, UMass Lowell Computer Science, ralves1@cs.uml.edu Copyright (c) 2020 by Rebecca S. Silva Alves. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+*/
+
+/*Center header. Will eventually center using bootstrap*/
+h1 {
+  text-align: center;
+}
+
+/*Main inputTable. Will style using mostly bootstrap later   */
+
+/*Jumbotron formating */
+.jumbotron h1 {
+  font-family: 'Sansita Swashed', cursive;
+}
+
+/*Center table within container*/
+table {
+  margin: auto;
+}
+
+/*setspaces on the board background images and center*/
+td.blank {
+  background-image: url("blank.png");
+  background-size: 100% 100%;
+}
+
+td.word {
+  background-image: url("word.png");
+  background-size: 100% 100%;
+}
+
+td.letter {
+  background-image: url("letter.png");
+  background-size: 100% 100%;
+}
+/* Set height and width of cells */
+td {
+  height: 60px;
+  width: 60px;
+}
+
+#rack{
+  position: relative;
+  display: block;
+  margin: auto;
+  height: 200px;
+  width: 700px;
+  background-image: url("rack.png");
+  background-repeat: no-repeat;
+}
+#tiles {
+  position: relative;
+  width: 70%;
+  top: 85px;
+  margin: auto;
+}
+.tile {
+  position: relative;
+  height: 60px;
+  width: 60px;
+}
+
+.button {
+  margin: auto;
+}

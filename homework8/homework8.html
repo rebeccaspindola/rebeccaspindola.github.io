@@ -1,0 +1,86 @@
+<!--
+  Assignment: Drag and Drop Scrabble
+  Rebecca S. Silva Alves, UMass Lowell Computer Science, ralves1@cs.uml.edu Copyright (c) 2020 by Rebecca S. Silva Alves. All rights reserved.
+  May be freely copied or excerpted for educational purposes with credit to the author.
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplication Table</title>
+    <!-- Reguired tags for bootsrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS for styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <!-- jQuery required CSS-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  </head>
+  <body>
+    <!-- page content. Top of Page  -->
+    <div class ="jumbotron jumbotron-flud">
+      <div class = "container">
+        <h1 class display-4> Scrable with Drag-and-Drop </h1>
+      </div>
+    </div>
+      <!-- Board -->
+    <div class="container">
+      <table class = "table table-bordered table-dark w-auto">
+        <thread>
+          <tr>
+            <td class="board blank ui-droppable" id="droppable"></td>
+            <td class="board letter ui-droppable" id="droppable"></td>
+            <td class="board board blank ui-dropper" id="droppable"></td>
+            <td class="board blank ui-dropper" id="droppable"></td>
+            <td class="board blank ui-dropper" id="droppable"></td>
+            <td class="board blank ui-dropper" id="droppable"></td>
+            <td class="board word ui-dropper" id="droppable"></td>
+          </tr>
+        </thread>
+      </table>
+    </div>
+    <!-- Rack -->
+    <div class="container" id="image-container">
+      <div id="rack">
+        <div id="tiles" class="ui-droppable">
+          <img id="t1" class="ui-draggable tile" src="srcimg/tiles/Scrabble_Tile_A.jpg"> </img>
+          <img id="t2" class="ui-draggable tile" src="srcimg/tiles/Scrabble_Tile_A.jpg"> </img>
+          <img id="t3" class="ui-draggable tile" src="srcimg/tiles/Scrabble_Tile_A.jpg"> </img>
+          <img id="t4" class="ui-draggable tile" src="srcimg/tiles/Scrabble_Tile_A.jpg"> </img>
+          <img id="t5" class="ui-draggable tile" src="srcimg/tiles/Scrabble_Tile_A.jpg"> </img>
+          <img id="t6" class="ui-draggable tile" src="srcimg/tiles/Scrabble_Tile_A.jpg"> </img>
+          <img id="t7" class="ui-draggable tile" src="srcimg/tiles/Scrabble_Tile_A.jpg"> </img>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="text-center">
+        <button type="button" class="btn btn-primary"> Clear All </button>
+      </div>
+    </div>
+    <!-- Javascript generated Table -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--Dynamically generated table -->
+    <script src="js/script.js"></script>
+
+    <!--JQuery Form Validation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+    <!--JQUERY UI -->
+    <script src ="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js "></script>
+
+  </body>
+</html>
